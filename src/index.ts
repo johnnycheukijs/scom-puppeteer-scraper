@@ -55,6 +55,10 @@ export default class PuppeteerScraper implements IScraperEngine {
         });
     }
 
+    async evaluate(fn: () => Promise<any>) {
+        return this.page.evaluate(fn);
+    }
+
     // Page networking
     async waitForRequest(urlOrPredict: string | ((response: any) => Promise<boolean>)) {
         return this.page.waitForRequest(urlOrPredict)
