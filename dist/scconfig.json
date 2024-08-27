@@ -1,0 +1,9 @@
+{
+    "name": "@scom/scom-puppeteer-scraper",
+    "type": "widget",
+    "version": "0.1.1",
+    "dependencies": [
+        "@scom/scom-scraper",
+        "puppeteer"
+    ]
+}
